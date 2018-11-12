@@ -39,7 +39,7 @@ public static void main(String[] args) {
    }
 
    //Affichage de la présence d'un circuit ou non + liste des sommets et rangs
-if(bool == false){
+   if(bool == false){
 
 System.out.println("Il n'y a pas de circuit !");
 l.setConditions(l.getConditions()+1);

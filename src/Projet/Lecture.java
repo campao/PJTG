@@ -8,7 +8,6 @@ import java.util.Scanner;
 
 public class Lecture {
 private int sommet, arc, line = 0, colonne = 0, graphe[][], negArc = 0, conditions = 0;
-//private Boolean succ = true, pred = true;
 private char[][] matAdj;
 private String[][] matArcs;
 private String ligne;
@@ -80,34 +79,7 @@ else{
 System.out.println("Il n'y a pas d'arc à valeur négative !\n");
 conditions ++;
 }
-/*Verif predecesseurs
-for(int i=0; i<arc; i++) {
-if(pred == false) break;
-for(int j =0; j<arc; j++) {
-if(graphe[i][1] == graphe[j][0]) {
-pred = false;
-}
-}
-}
-if(pred == false) {
-System.out.println("Au moins un sommet sans prédécesseur !");
-conditions ++;
-}
-else System.out.println("Tous les sommets ont un prédécesseur !");
-//Vérif successeurs
-for(int i=0; i<arc; i++) {
-if(succ == false) break;
-for(int j =0; j<arc; j++) {
-if(graphe[i][0] == graphe[j][1]) {
-succ = false;
-}
-}
-}
-if(succ == false) {
-System.out.println("Au moins un sommet sans successeur !");
-conditions ++;
-}
-else System.out.println("Tous les sommets ont un successeur !");*/
+
 System.out.println("\nVoici la matrice de valeurs des arcs :\n");
 for(int i=0; i<sommet; i++) {
 for(int j=0; j<sommet;j++) {
